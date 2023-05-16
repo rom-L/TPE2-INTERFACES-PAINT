@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://cdn.wallpaperhub.app/cloudcache/b/d/7/6/4/b/bd764bb25d49a05105060185774ba14cd2c846f7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app-container {
+    display: flex;
+    width: 1300px;
+    height: 650px;
+}
+
+.side-toolbar, .upper-toolbar, #my-canvas {
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.side-toolbar {
+    display: flex;
+    width: 15%;
+    background-color: #e2e2e9;
+    border: solid 3px rgb(85, 85, 85);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.upper-toolbar-canvas-container {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+}
+
+.upper-toolbar {
+    display: flex;
+    height: 25%;
+    width: 100%;
+    background-color: #e2e2e9;
+    border: solid 3px rgb(85, 85, 85);
+    border-top-right-radius: 20px;
+}
+
+.tool-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.tool-selector img {
+   width: 35px;
+   height: 35px;
+   margin-left: 5px;
+   border: solid 3px #89aac5;
+   border-radius: 5px;
+   background-color: #ccdff7;
+   box-shadow: 0px 0px 2px 0px black;
+   cursor: pointer;
+}
+
+.color-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 25%;
+    height: 100%;
+}
+
+.color-rows-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccdff7;
+    border: solid 3px #89aac5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.color-selector .color-btn {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.line-width-range-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    width: 25%;
+}
+
+.filter-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.filter-selector h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.filter-selector #select-filters {
+    width: 70%;
+}
+
+.filter-selector button {
+    margin-top: 15px;
+    width: 70%;
+    cursor: pointer;
+}
+
+.side-toolbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-toolbar label {
+    margin-right: 50px;
+    margin-bottom: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.side-toolbar button, input {
+    width: 80%;
+}
+
+.botonera1-sidetoolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.botonera1-sidetoolbar button {
+    margin-top: 20px;
+}
+
+#my-canvas {
+    border: solid 3px rgb(85, 85, 85);
+    background-color: white;
+}
+
+.color-palette-input {
+    margin-top: 5px;
+}
+
+#black-btn { background-color: black; }
+#gray-btn { background-color: gray; }
+#brown-btn { background-color: brown; }
+#pink-btn { background-color: pink; }
+#purple-btn { background-color: purple; }
+#blue-btn { background-color: blue; }
+#green-btn { background-color: green; }
+#yellow-btn { background-color: yellow; }
+#orange-btn { background-color: orange; }
+#red-btn { background-color: red; }
+
+
+.tool-selector img:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.tool-selector img.selected {
+    border: solid 3px rgb(11, 169, 11);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="app-container">
+        <section class="side-toolbar">
+            <div class="botonera1-sidetoolbar">
+                <label>Cargar imagen:</label>
+                <input type="file" id="img-input">
+
+                <button id="clear-canvas-btn" type="button">Limpiar canvas</button>
+            </div>
+
+            <button id="download-img-btn" type="button">Descargar imagen</button>
+        </section>
+    
+        <section class="upper-toolbar-canvas-container">
+            <section class="upper-toolbar">
+                <div class="tool-selector">
+                    <img class="pencil-btn" src="./img/Pencil-icon.png" alt="pencil">
+                    <img class="eraser-btn" src="./img/eraser-icon.png" alt="eraser">
+                </div>
+
+                <div class="color-selector">
+                    <div class="color-rows-container">
+                        <div class="color-row1">
+                            <button id="black-btn" class="color-btn" type="button" data-color="black"></button>
+                            <button id="gray-btn" class="color-btn" type="button" data-color="gray"></button>
+                            <button id="brown-btn" class="color-btn" type="button" data-color="brown"></button>
+                            <button id="pink-btn" class="color-btn" type="button" data-color="pink"></button>
+                            <button id="purple-btn" class="color-btn" type="button" data-color="purple"></button>
+                        </div>
+    
+                        <div class="color-row2">
+                            <button id="blue-btn" class="color-btn" type="button" data-color="blue"></button>
+                            <button id="green-btn" class="color-btn" type="button" data-color="green"></button>
+                            <button id="yellow-btn" class="color-btn" type="button" data-color="yellow"></button>
+                            <button id="orange-btn" class="color-btn" type="button" data-color="orange"></button>
+                            <button id="red-btn" class="color-btn" type="button" data-color="red"></button>
+                        </div>
+
+                        <input class="color-palette-input" type="color">
+                    </div>
+                </div>
+
+                <div class="line-width-range-container">
+                    <label>Cambiar grosor:</label>
+                    <input class="lineWidth-input" type="range" min="5" max="15" value="5">
+                </div>
+
+                <div class="filter-selector">
+                    <h1>Elegir filtro:</h1>
+                    <select name="filters" id="select-filters">
+                        <option value="negativo">Negativo</option>
+                        <option value="brillo">Brillo</option>
+                        <option value="binarizacion">Binarizacion</option>
+                        <option value="sepia">Sepia</option>
+                        <option value="saturacion">Saturacion</option>
+                        <option value="blur">Blur</option>
+                    </select>
+
+                    <button class="apply-btn" type="button">Aplicar filtro</button>
+                </div>
+            </section>
+    
+            <canvas id="my-canvas" width="1106" height="500"></canvas>
+        </section>
+    </section>
+    
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/classes/pencil.js"></script>
+    <script type="module" src="js/classes/canvasImage.js"></script>
+</body>
+</html>
